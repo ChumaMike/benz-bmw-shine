@@ -10,7 +10,7 @@ function NotFoundComponent() {
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          The page you're looking for doesn't exist.
         </p>
         <div className="mt-6">
           <Link
@@ -30,9 +30,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Isioalo Car Wash — Premium Car Wash Services" },
-      { name: "description", content: "Professional car wash services at affordable prices. Your car is an extension of your image." },
-      { name: "author", content: "Isioalo Car Wash" },
+      { title: "Isiqalo Car Wash — Your Car Is An Extension Of Your Image" },
+      { name: "description", content: "Isiqalo Car Wash — premium hand car wash services at affordable prices. Cars from R30, SUVs from R40. Open 7 days." },
+      { name: "author", content: "Isiqalo Car Wash" },
+      { property: "og:title", content: "Isiqalo Car Wash — Premium Car Wash" },
+      { property: "og:description", content: "Premium hand car wash at affordable prices. Cars from R30. Open daily 07:30–18:00." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
